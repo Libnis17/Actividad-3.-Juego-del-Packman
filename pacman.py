@@ -135,8 +135,8 @@ def move():
             point.move(course)
         else:
             options = [
-                vector(10, 0),
-                vector(-5, 0),
+                vector(20, 0),
+                vector(-1, 0),
                 vector(0, 5),
                 vector(0, -5),
             ]
