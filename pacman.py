@@ -129,13 +129,13 @@ def move():
     up()
     goto(pacman.x + 10, pacman.y + 10)
     dot(20, 'yellow')
-
+#Hacer a los fantasmas mas rapidos
     for point, course in ghosts:
         if valid(point + course):
             point.move(course)
         else:
             options = [
-                vector(5, 0),
+                vector(10, 0),
                 vector(-5, 0),
                 vector(0, 5),
                 vector(0, -5),
