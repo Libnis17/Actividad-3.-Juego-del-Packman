@@ -135,10 +135,10 @@ def move():
             point.move(course)
         else:
             options = [
-                vector(10, -10),
-                vector(-10, -10),
-                vector(-10, 10),
-                vector(10, 10),
+                vector(15, 10),
+                vector(-15, 10),
+                vector(10, 15),
+                vector(10, -15),
             ]
             plan = choice(options)
             course.x = plan.x
@@ -171,10 +171,10 @@ writer.goto(160, 160)
 writer.color('white')
 writer.write(state['score'])
 listen()
-onkey(lambda: change(5, 0), 'Right')
-onkey(lambda: change(-5, 0), 'Left')
-onkey(lambda: change(0, 5), 'Up')
-onkey(lambda: change(0, -5), 'Down')
+onkey(lambda: change(15, 10), 'Right')
+onkey(lambda: change(-15, 10), 'Left')
+onkey(lambda: change(10, 15), 'Up')
+onkey(lambda: change(10, -15), 'Down')
 world()
 move()
 done()
