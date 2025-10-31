@@ -1,1 +1,6 @@
 #Original de Pacman.py
+#Se creo una nueva rama llamada "faster" para hacer que los fantasmas vayan mas rápido
+#Se modificaron los vectores de la línea 138 a la 141
+#Se modificaron onkey de las líneas 174 a la 177
+#Se modificó ontimer de 100 a 50 
+
