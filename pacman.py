@@ -162,6 +162,13 @@ else:
         up()
         goto(point.x + 10, point.y + 10)
         dot(20, 'red')
+        up()
+  goto(point.x + 10, point.y + 10)
+  # Cambiar color según distancia
+  if abs(pacman - point) < 100:
+      dot(20, 'orange')
+  else:
+      dot(20, 'red')
 
     update()
 
